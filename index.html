@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Recipe Finder</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app-container">
     <header>
       <h1>Recipe Finder 🍽️</h1>
-      <p>Find your favorite dishes effortlessly!</p>
-      <input type="text" id="search" placeholder="Search for a recipe...">
+      <p>Find and learn how to prepare your favorite dishes!</p>
+      <input type="text" id="search" placeholder="Search for a recipe..." />
     </header>
 
     <main id="recipes" class="recipe-container">
-     
+  
     </main>
+
+    <div id="recipe-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <h2 id="recipe-title"></h2>
+        <p id="recipe-ingredients"></p>
+        <p id="recipe-preparation"></p>
+      </div>
+    </div>
 
     <footer>
       <p>Happy Cooking! 👩‍🍳👨‍🍳</p>
